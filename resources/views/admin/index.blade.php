@@ -3,7 +3,7 @@
 @section('content')
 <div class="container">
     <div class="row justify-content-center">
-        <div class="col-md-4">
+        <div class="col-md-4 mt-3">
             <div class="card">
                 <div class="card-header bg-dark text-white">{{ __('Dashboard') }}</div>
 
@@ -18,7 +18,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mt-3">
             <div class="card ">
                 <div class="card-header bg-dark text-white">Posts</div>
 
@@ -33,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-4">
+        <div class="col-md-4 mt-3">
             <div class="card">
                 <div class="card-header bg-dark text-white">Features</div>
 
@@ -48,7 +48,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-8 mt-3">
             <div class="card">
                 <div class="card-header bg-dark text-white">Schlüsselwerte</div>
 
@@ -64,7 +64,7 @@
                         <tbody>
                             @foreach ($variables as $variable)
                             <tr>
-                                    <td><a href="admin/variables/{{$variable->id}}">{{$variable->name}}</a></td>
+                                    <td><a href="admin/variables/{{$variable->id}}/edit">{{$variable->name}}</a></td>
                                     <td>{{$variable->value}}</td>
                             </tr>
                             @endforeach

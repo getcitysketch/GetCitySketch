@@ -49,5 +49,10 @@ Route::resource('admin/features', 'FeaturesController')->middleware('auth');
 //Posts
 Route::get('posts/{id}', 'PostsController@detail');
 
+//Variables
+Route::resource('admin/variables', 'VariablesController')->middleware('auth')->only([
+    'edit', 'update'
+]);
+
 //Authentication
 Auth::routes(['register' => false]);

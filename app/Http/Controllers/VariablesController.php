@@ -3,8 +3,9 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use App\Variable;
 
-class VariabblesController extends Controller
+class VariablesController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -56,7 +57,8 @@ class VariabblesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $variable = Variable::find($id);
+        return view('variables.edit', compact('variable'));
     }
 
     /**
@@ -68,7 +70,12 @@ class VariabblesController extends Controller
      */
     public function update(Request $request, $id)
     {
-        //
+        $variable = Variable::find($id);
+
+        $variable->value = $request->input('value');
+        $variable->save();
+
+        return redirect('admin');
     }
 
     /**
