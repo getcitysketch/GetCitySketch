@@ -55,4 +55,4 @@ Route::resource('admin/variables', 'VariablesController')->middleware('auth')->o
 ]);
 
 //Authentication
-Auth::routes(['register' => false]);
+Auth::routes(['register' => true]);

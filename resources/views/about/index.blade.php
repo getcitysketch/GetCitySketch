@@ -9,7 +9,7 @@
         <ul>
             @foreach ($features as $feature)
             <li>
-                <div>
+                <div class="card">
                     <h5>{{$feature->title}}</h5>
                     <p>{{$feature->body}}</p>
                     <img width="300" height="200" src="{{asset('storage/images')}}/{{$feature->image}}">
