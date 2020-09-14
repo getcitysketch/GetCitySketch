@@ -20,7 +20,9 @@
             </ul>
         </nav>
     </header>
-    <h1 class="orbitron"> CitySketch </h1>
+    <div>
+        <h1 class="orbitron"> <img width="60" height="60" src="{{asset('logo/CSK_Logo.svg')}}" alt="CitySketch Logo"> CitySketch </h1>
+    </div>
     @yield('content')
 
 
