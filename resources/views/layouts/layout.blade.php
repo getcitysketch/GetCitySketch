@@ -10,15 +10,16 @@
 </head>
 <body>
     <header>
+        <img class="logo" src="images/CSK_Logo.jpg" alt="CitySketch">
         <nav>
-            <div>Navigation</div>
-            <ul>
+            <ul class="nav_links">
                 <li><a href="{{url('/')}}">Home</a></li>
                 <li><a href="{{url('diplomarbeit')}}">Diplomarbeit</a></li>
                 <li><a href="{{url('features')}}">Features</a></li>
                 <li><a href="{{url('gallery')}}">Gallerie</a></li>
             </ul>
         </nav>
+        <a class="cta" href="#"><button>Contact</button></a>
     </header>
     @yield('content')
 
