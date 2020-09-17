@@ -1,37 +1,31 @@
-## Welcome to GitHub Pages
+# CitySketch – das Blender Add-on zum Generieren von 3D Städten
 
-You can use the [editor on GitHub](https://github.com/KamilKruk01/CitySketch/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
 
-### Markdown
+### Die Idee
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+Es soll ein Blender Add-on (eine Erweiterung spezifisch für das 3D Programm „Blender“) entstehen mit dem der User schnell 3D-Städte in Blender generieren kann. Die Grundlage für die generierte Stadt, soll eine vom User gezeichnete Skizze sein, auf der die Umrisse der Stadt, dessen Zonen (Grünflächen) sowie die Stadtzentren markiert sind.
 
-```markdown
-Syntax highlighted code block
+Nachdem der User den Grundriss der Stadt skizziert hat, und einen Knopf zum Generieren drückt, sollen fertige 3D Assets aus einem Ordner, die ebenfalls von uns bereitgestellt werden, mithilfe von selbst geschriebenen Algorithmen strategisch platziert werden. Der User soll zusätzlich die Möglichkeit haben, seine eigenen Assets auszuwählen und zahlreiche Einstellungen der Stadt (zb.: Detailgrad, …) anzupassen.
 
-# Header 1
-## Header 2
-### Header 3
+Im Rahmen der Diplomarbeit wollen wir zwei Asset-Packs bereitstellen:
+•	ein Low-Poly (wenige Polygone) Asset-Pack, gedacht für Prototyping von Städten, oft verwendet in der Architektur
+•	ein High-Poly (viele Polygone => viele Details) Asset-Pack, gedacht für realistische Städte für gerenderte Filme, Fotos und Spiele
 
-- Bulleted
-- List
+Die nachfolgenden Bilder sollen nicht das Resultat darstellen, sondern dienen allein zur Veranschaulichung der Grundfunktion des Add-on.
 
-1. Numbered
-2. List
 
-**Bold** and _Italic_ and `Code` text
+Der User zeichnet mit dem in Blender eingebauten „Grease Pencil“(Stift) die Zonen und die Stadtzentren ein. Die graue „Plane“ (Fläche) im Hintergrund definiert die Größe und Form der Stadt.
 
-[Link](url) and ![Image](src)
-```
+Nachdem der User den Knopf zum Generieren drückt, werden die leeren Flächen unter Berücksichtigung der Skizzen des Users, mit Assets, die der User auswählen kann, befüllt.
 
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
-### Jekyll Themes
+### Das Team
 
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/KamilKruk01/CitySketch/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
+- Kamil Kruk **Projektleiter**
+- Steven San Diego
+- Felix Rabas
+- Huy Tran
 
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
+### Website
+Die Offizielle Website von CitySketch finden Sie unter https://getCitySketch.com
