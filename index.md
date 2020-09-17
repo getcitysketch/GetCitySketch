@@ -22,10 +22,10 @@ Nachdem der User den Knopf zum Generieren drückt, werden die leeren Flächen un
 
 ### Das Team
 
-- Kamil Kruk **Projektleiter**
+- Kamil Kruk - Projektleiter
 - Steven San Diego
 - Felix Rabas
 - Huy Tran
 
 ### Website
-Die Offizielle Website von CitySketch finden Sie unter https://getCitySketch.com
+Die Offizielle Website von CitySketch finden Sie unter [https://getCitySketch.com](https://getCitySketch.com)
