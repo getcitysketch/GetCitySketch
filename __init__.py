@@ -22,12 +22,14 @@ bl_info = {
     "category" : "Generic"
 }
 
-from . import auto_load
+#pylint: disable = import-error
+import bpy
 
-auto_load.init()
+from .operators.generate_map import Generate_mapOperator
+from .panels.generate_map import Generate_mapPanel
+from .place_buildings.place_buildings_op import Place_buildingsOperator
+from .place_buildings.place_buildings_pl import Place_buildingsPanel
 
-def register():
-    auto_load.register()
+classes = (Generate_mapOperator, Generate_mapPanel, Place_buildingsOperator, Place_buildingsPanel)
 
-def unregister():
-    auto_load.unregister()
+register, unregister = bpy.utils.register_classes_factory(classes)
