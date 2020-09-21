@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="135" height="135" viewBox="0 0 135 135">
+  <defs>
+    <clipPath id="clip-CSK_Logo">
+      <rect width="135" height="135"/>
+    </clipPath>
+  </defs>
+  <g id="CSK_Logo" clip-path="url(#clip-CSK_Logo)">
+    <rect width="135" height="135" fill="#fff"/>
+    <g id="_3" data-name="3" transform="translate(-0.5 4.32)">
+      <path id="Pfad_1" data-name="Pfad 1" d="M90.56,124.18H44.96V2.68l45.6,27.94Z" fill="#fff" stroke="#689abe" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Pfad_12" data-name="Pfad 12" d="M81.061,106.87H44.96V2.68l36.1,22.12Z" transform="translate(0 16.31)" fill="#689abe"/>
+      <path id="Pfad_3" data-name="Pfad 3" d="M60.83,124.18H19.06V27.99L60.83,60.16Z" fill="#fff" stroke="#61b89a" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Pfad_10" data-name="Pfad 10" d="M50.861,106.224H19.06V27.99l31.8,24.493Z" transform="translate(0 16.956)" fill="#61b89a"/>
+      <path id="Pfad_4" data-name="Pfad 4" d="M19.11,46.27,46.97,68.1Z" fill="#61b89a"/>
+      <path id="Pfad_5" data-name="Pfad 5" d="M75.96,124.18h41.86V38.15L75.96,55.42Z" fill="#fff" stroke="#35979a" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Pfad_11" data-name="Pfad 11" d="M75.96,109.574h32.32V38.15L75.96,51.484Z" transform="translate(9.54 13.606)" fill="#35979a"/>
+      <path id="Pfad_7" data-name="Pfad 7" d="M180.3,234.73" transform="translate(-29.95 -63.03)" fill="none" stroke="#689abe" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Pfad_8" data-name="Pfad 8" d="M52.91,234.73" transform="translate(-29.95 -63.03)" fill="none" stroke="#689abe" stroke-miterlimit="10" stroke-width="3"/>
+      <path id="Pfad_9" data-name="Pfad 9" d="M0,0H17.79" transform="translate(117.82 124.18)" fill="none" stroke="#35979a" stroke-width="3"/>
+      <line id="Linie_2" data-name="Linie 2" x2="17.79" transform="translate(0.5 124.18)" fill="#fff" stroke="#61b89a" stroke-miterlimit="10" stroke-width="3"/>
+      <rect id="Rechteck_5" data-name="Rechteck 5" width="136" height="8" transform="translate(0.5 122.68)" fill="#689abe"/>
+    </g>
+  </g>
+</svg>

@@ -1,55 +1,344 @@
-@import url('https://fonts.google.com/specimen/Raleway?sidebar.open=true&selection.family=Raleway:wght@300#glyphs');
+/* orbitron-regular - latin */
+@font-face {
+    font-family: 'Orbitron';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/orbitron-v16-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/orbitron-v16-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
 
-* {
-    box-sizing: border-box;
-    margin: 0;
+/* raleway-regular - latin */
+@font-face {
+    font-family: 'Raleway';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/raleway-v17-latin-regular.eot'); /* IE9 Compat Modes */
+    src: local(''),
+         url('../fonts/raleway-v17-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/raleway-v17-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/raleway-v17-latin-regular.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/raleway-v17-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/raleway-v17-latin-regular.svg#Raleway') format('svg'); /* Legacy iOS */
+}
+
+*{
+    font-family: 'Raleway';
+}
+
+/* Font Helpers */
+.orbitron{
+    font-family: 'Orbitron';
+}
+
+.raleway{
+    font-family: 'Raleway';
+}
+
+/* RESPONSIVE */
+@viewport {
+    width: device-width ;
+    zoom: 1.0 ;
+  }
+
+/* Media Queries: Tablet Landscape */
+@media screen and (max-width: 1060px) {
+    #primary { width:67%; }
+    #secondary { width:30%; margin-left:3%;}  
+}
+
+/* Media Queries: Tabled Portrait */
+@media screen and (max-width: 768px) {
+    #primary { width:100%; }
+    #secondary { width:100%; margin:0; border:none; }
+}
+
+/* HEADER */
+
+*{
     padding: 0;
+    margin: 0;
+    color: #d9d9d9;
+    list-style: none;
+    box-sizing: border-box;
 }
 
-li, a, button {
-    font-family: "Raleway", sans-serif;
-    font-weight: 500;
-    font-size: 16px;
-    text-decoration: none;
+nav{
+    background: #0082e6;
+    height: 80px; 
+    width: 100%; 
 }
 
-header {
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 17px; 
+    padding: 7px 13px; 
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+a.active,a:hover{
+    background: #1b9bff;
+    transition: .5s;
+}
+
+.checkbtn{
+    font-size: 30px; 
+    color: white; 
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+}
+
+#check{
+    display: none;
+}
+
+@media (max-width: 952px){
+    label.logo{
+        font-size: 30px;
+        padding-left: 50px;
+    }
+
+    nav ul li a{
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 858px){
+    .checkbtn{
+        display: block;
+    }
+    ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #c4c4c4;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 50px 0;
+        line-height: 30px;
+    }
+    nav ul li a{
+        font-size: 20px;
+    }
+    a:hover,a.activate{
+        background: none;
+        color: #0082e6;
+    }
+    #check:checked ~ ul{
+        left: 0;
+    }
+}
+
+/* PAGE WRAPPER */
+.page-wrapper{
+    min-height: 100%;
+}
+
+.page-wrapper a:hover{
+    color: #1b9bff;
+}
+
+/* FOOTER */
+
+footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background: #111;
+}
+
+.main-content{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 30px 10%;
+    color: #d9d9d9;
+    padding: 10px 20px;
 }
 
-.logo {
+.main-content .box{
+    flex-basis: 50%;
+    padding: 10px 20px;
+}
+
+.box h2{
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.box .content{
+    margin: 20px 0 0 0;
+    position: relative;
+}
+
+.box .content:before{
+    position: absolute;
+    content: '';
+    top: -10px;
+    height: 2px;
+    width: 100%;
+    background: #1a1a1a;
+}
+
+.box .content:after{
+    position: absolute; 
+    content: '';
+    height: 2px;
+    width: 15%;
+    background: #1b9bff;
+    top: -10px;
+}
+
+.left .content p{
+    text-align: justify;
+}
+
+.left .content .social{
+    margin: 20px 0 0 0;
+}
+
+.left .content .social a{
+    padding: 0 2px;
+}
+
+.left .content .social a span{
+    height: 40px;
+    width: 40px;
+    background: #1a1a1a;
+    line-height: 40px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.left .content .social a span:hover{
+    background: #1b9bff;
+}
+
+.center .content .fas{
+    font-size: 1.4375rem;
+    background: #1a1a1a;
+    height: 45px;
+    width: 45px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+    transition: 0.3s;
     cursor: pointer;
 }
 
-.nav_links {
-    list-style-type: none;
+.center .content .fas:hover{
+    background: #1b9bff;
 }
 
-.nav_links li {
-    display: inline-block;
-    padding: 0px 20px;
+.center .content .text{
+    font-size: 1.0625rem;
+    font-weight: 500;
+    padding-left: 10px;
 }
 
-.nav_links li a {
-    transition: all 0.3s ease 0s;
+.center .content .phone{
+    margin: 10px 0;
 }
 
-.nav_links li a:hover{
-    color: #0088a9;
+.right form .text{
+    font-size: 1.0625rem;
+    margin-bottom: 2px;
+    color: #656565;
 }
 
-button {
-    padding: 9px 25px;
-    background-color: rgba(0 , 136, 169, 1);
+.right form .msg{
+    margin-top: 10px;
+}
+
+.right form input, .right form textarea{
+    width: 100%;
+    font-size: 1.0625rem;
+    background: #151515;
+    padding-left: 10px;
+    border: 1px solid #222222;
+}
+
+.right form input:focus,
+.right form textarea:focus{
+    outline-color: #3498db;
+}
+.right form input{
+    height: 35px;
+}
+
+.right form btn{
+    margin-top: 10px;
+}
+
+.right form .btn button{
+    height: 40px;
+    width: 100%;
     border: none;
-    border-radius: 50px;
-    cursor:  pointer;
-    transition: all 0.3s ease 0s;
+    outline: none;
+    background: #1b9bff;
+    font-size: 1.0625rem;
+    font-weight: 500;
+    cursor: pointer; 
+    transition: .3s;
 }
 
-button:hover {
-    background-color: rgba(0, 136, 169, 0.8);
+.right form .btn button:hover{
+    background: #000;
 }
+
+.bottom{
+    text-align: center;
+    padding: 5px;
+    font-size: 0.9375rem;
+    background: #151515;
+}
+
+.bottom span{
+    color: #656565;
+}
+
+.bottom a{
+    color: #1b9bff;
+    text-decoration: none;
+}
+
+.bottom a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 900px){
+    footer{
+        position: relative;
+        bottom: 0px;
+    }
+
+    .main-content{
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+    
+    .main-content .box{
+        margin: 5px 0px;
+    }
+}
+
