@@ -19,6 +19,13 @@ Der User zeichnet mit dem in Blender eingebauten „Grease Pencil“(Stift) die 
 
 Nachdem der User den Knopf zum Generieren drückt, werden die leeren Flächen unter Berücksichtigung der Skizzen des Users, mit Assets, die der User auswählen kann, befüllt.
 
+### Die Ziele 
+> __Projektstart__ [03.06.2020]
+> __Vorbereitungen abgeschlossen__ [06.09.2020]
+> __Planung erledigt__ [25.09.2020]
+> __Umsetzung abgeschlossen__ [01.02.2021]
+> __Projekt präsentiert__ [16.03.2021]
+> __Projekt abgeschlossen__ [23.03.2021]
 
 ### Das Team
 
