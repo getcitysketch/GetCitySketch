@@ -21,10 +21,15 @@ Nachdem der User den Knopf zum Generieren drückt, werden die leeren Flächen un
 
 ### Die Ziele 
 > __Projektstart__ [03.06.2020]
+>
 > __Vorbereitungen abgeschlossen__ [06.09.2020]
+>
 > __Planung erledigt__ [25.09.2020]
+>
 > __Umsetzung abgeschlossen__ [01.02.2021]
+>
 > __Projekt präsentiert__ [16.03.2021]
+>
 > __Projekt abgeschlossen__ [23.03.2021]
 
 ### Das Team
